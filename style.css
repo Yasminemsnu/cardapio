@@ -416,32 +416,24 @@ nav a{
 BOTÃO FLUTUANTE WHATSAPP
 ========================= */
 
-.whatsapp-float{
+.whatsapp-btn{
     position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+}
 
-    bottom:25px;
-    right:25px;
-
-    width:110px;
-    height:110px;
-
-    z-index:9999;
-
+.whatsapp-btn img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
     transition:0.3s;
 }
 
-.whatsapp-float img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-
-    filter:drop-shadow(0 8px 20px rgba(0,0,0,0.35));
-}
-
-.whatsapp-float:hover{
+.whatsapp-btn img:hover{
     transform:scale(1.1);
 }
-
 
 animation:whats 2s infinite;
 
